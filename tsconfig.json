@@ -1,0 +1,41 @@
+{
+  "include": [
+    "src/*",
+    "**/*.ts",
+  ],
+  "exclude": [
+    "Assets",
+    "css",
+    "js",
+    "php",
+  ],
+  "typeAcquisition": {
+    "enable": false,
+  },
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "es2016",
+      "es6",
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "jquery",
+    ],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "removeComments": false,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+    },
+  },
+}

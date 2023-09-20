@@ -1,0 +1,37 @@
+{
+  "name": "ide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --mode production",
+    "start": "npx webpack-dev-server --mode development",
+    "reload": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bo52/IDE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bo52/IDE/issues"
+  },
+  "homepage": "https://github.com/bo52/IDE#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.18",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
