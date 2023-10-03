@@ -1,0 +1,7 @@
+.btn-rec {
+    cursor: pointer;
+}
+
+.btn-rec:hover {
+    background-color: #DEFECB;
+}

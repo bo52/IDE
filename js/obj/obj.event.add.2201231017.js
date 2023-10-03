@@ -9,5 +9,5 @@ function fun2201231017(object, event, handler, useCapture = undefined) {
         object.attachEvent('on' + event, handler);
     }
     else
-        alert("Add handler is not supported11");
+        alert("Add handler is not supported");
 }

@@ -5,16 +5,17 @@ class replace_btn_class2309161719 extends replace_class2309161713 {
     }
     static teg_link(id) {
         let t = this.teg(id);
-        t = bo52.Teg(t).data;
+        //t = bo52.Teg(t).data;
         let html = t[0].innerHTML;
-        $(t).remove();
+        //$(t).remove();
         return html;
     }
 
     static teg(id) {
         let href = 'https://codegid.ru/?p=' + id
         //получить титл поста в php wordpress
-        let title = wpfun(2303021816, id)
+        let title = ''
+        //let title = wpfun(2303021816, id)
         //получить имя и ссылка поста
         return {
             css: { margin_bottom: '2px' },

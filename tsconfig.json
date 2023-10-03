@@ -2,6 +2,7 @@
   "include": [
     "src/*",
     "**/*.ts",
+    "src/LIB/funs",
   ],
   "exclude": [
     "Assets",
@@ -23,7 +24,7 @@
     ],
     "typeRoots": [
       "./node_modules/@types",
-      "jquery",
+      "reflect-metadata",
     ],
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -35,6 +36,18 @@
     "paths": {
       "@src/*": [
         "src/*"
+      ],
+      "@fun/*": [
+        "src/LIB/fun/*"
+      ],
+      "@funs/*": [
+        "src/LIB/funs/*"
+      ],
+      "@teg/*": [
+        "src/TEG/*"
+      ],
+      "@img/*": [
+        "src/img/*"
       ],
     },
   },
