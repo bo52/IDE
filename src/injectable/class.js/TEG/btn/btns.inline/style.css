@@ -1,0 +1,12 @@
+.btns-inline {
+    padding-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btns-inline-img {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+
+}

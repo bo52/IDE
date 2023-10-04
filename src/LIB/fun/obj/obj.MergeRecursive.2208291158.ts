@@ -13,7 +13,7 @@ export function СоединитьСвойстваОбъектов(obj1, obj2, i
 
   for (var p in obj2) {
     try {
-      //event
+      //это event
       if (is_funs == false)
         is_funs = p == 'event'
       // Property in destination object set; update its value.
@@ -23,7 +23,9 @@ export function СоединитьСвойстваОбъектов(obj1, obj2, i
       } else {
         //свойство является массивом
         if (Array.isArray(obj1[p])) {
-          if (is_funs || p == 'classes') { obj1[p] = obj1[p].concat(obj2[p]); } else {
+          if (is_funs || p == 'classes') {
+            obj1[p] = obj1[p].concat(obj2[p])
+          } else {
             Object.keys(obj1[p]).forEach(function (key) {
               obj1[p][key] = СоединитьСвойстваОбъектов(obj1[p][key], obj2[p][key], is_funs)
             })

@@ -1,7 +1,7 @@
 import { СоединитьСвойстваОбъектов, УникНомерПоДате } from "@src/index"
 import { ОпределитьТелоДляТега } from "./body/teg.body.edit.2206221301"
 import { ДобавитьВТегДанные } from "./data/teg.attr.data.add.2208290901"
-import { ДобавитьСобытияТегу } from "./event/teg.attr.event.add.2208290938"
+import { ДобавитьВТегТекстовыеСобытия, ДобавитьСобытияТегу } from "./event/teg.attr.event.add.2208290938"
 import { ДобавитьТегВТело } from "./body/teg.attr.body.add.2206221219"
 import ДобавитьАтрибутыТегу from "./attr/teg.attr.add.2208290932"
 import ДобавитьСинтаксисСтилиТегу from "./css/teg.attr.css.add.2208290924"
@@ -29,9 +29,10 @@ export function СозданиеТега(obj, p) {
     }
     p.body = ОпределитьТелоДляТега(p);//body.edit
 
-    if (p.teg == undefined) p.teg = 'div';
-    //события
-    let atr_data = ДобавитьВТегДанные(p);//data.create
+    if (p.teg == undefined) p.teg = 'div'
+    let atr_data = ДобавитьВТегДанные(p)
+    //let atr_ev = ДобавитьВТегТекстовыеСобытия(p)
+
 
     if (p.attr == undefined) p.attr = {}
     if (p.attr.id == undefined) p.attr.id = УникНомерПоДате()

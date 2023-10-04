@@ -22,8 +22,12 @@
   "homepage": "https://github.com/bo52/IDE#readme",
   "devDependencies": {
     "@types/jquery": "^3.5.18",
+    "@types/react": "^18.2.24",
+    "@types/react-dom": "^18.2.9",
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "image-webpack-loader": "^8.1.0",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
@@ -38,6 +42,8 @@
     "jquery": "^3.7.1",
     "jquery-ui": "^1.13.2",
     "jquery-ui-bundle": "^1.12.1-migrate",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "reflect-metadata": "^0.1.13",
     "webpack-jquery-ui": "^2.0.1"
   }

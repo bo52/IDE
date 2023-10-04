@@ -2,6 +2,7 @@
   "include": [
     "src/*",
     "**/*.ts",
+    "**/*.tsx",
     "src/LIB/funs",
   ],
   "exclude": [
@@ -15,6 +16,7 @@
   },
   "compileOnSave": true,
   "compilerOptions": {
+    "jsx": "react",
     "target": "es6",
     "module": "es6",
     "lib": [
@@ -43,8 +45,11 @@
       "@funs/*": [
         "src/LIB/funs/*"
       ],
-      "@teg/*": [
+      "@TEG/*": [
         "src/TEG/*"
+      ],
+      "@teg/*": [
+        "src/injectable/class.js/TEG/*"
       ],
       "@img/*": [
         "src/img/*"

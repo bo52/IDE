@@ -23,8 +23,8 @@ export default function fun2208290932(p) {
             //const img = new Image()
             //img.src = imageSrc
             val = require('@img/' + val + '.png')
-        }
-
-        p.ex.attr(key.replace('_', '-'), val);
+            p.ex.attr('src', val.default)
+        } else
+            p.ex.attr(key.replace('_', '-'), val);
     }, p.attr);
 }

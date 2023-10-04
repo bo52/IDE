@@ -1,0 +1,27 @@
+.ToolTip_2304211344 {
+    cursor: pointer;
+    position: relative;
+    width: max-content;
+    border-bottom: 1px dotted black;
+}
+
+.ToolTip_color_2304211344 {
+    border: 1px solid #666;
+    background-color: #CCC;
+    /*color: #fff;*/
+}
+
+.ToolTip_2304211344 .ToolTipText_2304211344 {
+    visibility: hidden;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 95%;
+}
+
+.ToolTip_2304211344:hover .ToolTipText_2304211344 {
+    visibility: visible;
+}

@@ -1,6 +1,6 @@
 import { Teg, CLASS, bo52 } from "@src/index"
-import { ДобавитьТегВТело } from "@teg/body/teg.attr.body.add.2206221219"
-import ДобавитьHtmlМассивТегу from "@teg/html/teg.html.arr.add.2206221319"
+import { ДобавитьТегВТело } from "@TEG/body/teg.attr.body.add.2206221219"
+import ДобавитьHtmlМассивТегу from "@TEG/html/teg.html.arr.add.2206221319"
 /**2206221314
  * teg.atr.html.add
  * fun2206221314

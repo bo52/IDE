@@ -4,27 +4,20 @@ import './style.css'
 //empty
 //форма fm.abs.min в движении
 export interface IFm_abs extends ITeg_show {
-    get TEG_body()
     ФормаВЦентре()
 }
 @injectable()
 export class Fm_abs extends Teg_show implements IFm_abs {
-    //после создания Формы
-    get TEG_body() {
-        return {
-            classes: 'fm-abs-body',
-            html: 'empty'
-        }
-    }
     override get TEG(): {} {
-        return {
-            classes: 'fm-abs',
-            css: 'fm-abs',
-            html: this.TEG_body,
+        return СоединитьСвойстваОбъектов({
+            classes: ['fm-abs'],
+            html: {
+                classes: ['fm-abs-body'],
+            },
             event: {
                 click: () => this.click()
             },
-        }
+        }, super.TEG)
     }
     click() {
         this.Teg.css('z-index', () => {
@@ -32,9 +25,11 @@ export class Fm_abs extends Teg_show implements IFm_abs {
             return bo52.z
         })
     }
-    override show(args) {
+    override show(args = undefined) {
         super.show(undefined)
+
         this.Teg.draggable()
+        this.Teg.resizable()
         return this
     }
     ФормаВЦентре() {
